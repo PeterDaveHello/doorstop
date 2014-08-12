@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>doorstop.server.test package &mdash; Doorstop 0.8-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.8-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Doorstop 0.8-dev documentation" href="index.html" />
+    <link rel="up" title="doorstop.server package" href="doorstop.server.html" />
+    <link rel="prev" title="doorstop.server package" href="doorstop.server.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.server.html" title="doorstop.server package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Doorstop 0.8-dev documentation</a> &raquo;</li>
+          <li><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li><a href="doorstop.html" >doorstop package</a> &raquo;</li>
+          <li><a href="doorstop.server.html" accesskey="U">doorstop.server package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="doorstop-server-test-package">
+<h1>doorstop.server.test package<a class="headerlink" href="#doorstop-server-test-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-doorstop.server.test.test_all">
+<span id="doorstop-server-test-test-all-module"></span><h2>doorstop.server.test.test_all module<a class="headerlink" href="#module-doorstop.server.test.test_all" title="Permalink to this headline">¶</a></h2>
+<p>Integration tests for the doorstop.web package.</p>
+</div>
+<div class="section" id="module-doorstop.server.test.test_client">
+<span id="doorstop-server-test-test-client-module"></span><h2>doorstop.server.test.test_client module<a class="headerlink" href="#module-doorstop.server.test.test_client" title="Permalink to this headline">¶</a></h2>
+<p>Unit tests for the doorstop.web.client package.</p>
+<dl class="class">
+<dt id="doorstop.server.test.test_client.TestModule">
+<em class="property">class </em><tt class="descclassname">doorstop.server.test.test_client.</tt><tt class="descname">TestModule</tt><big>(</big><em>methodName='runTest'</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></tt></p>
+<p>Unit tests for the doorstop.web.client module.</p>
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_check">
+<tt class="descname">test_check</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can check a server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_check_bad">
+<tt class="descname">test_check_bad</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_check_bad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can check a bad server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_check_disabled">
+<tt class="descname">test_check_disabled</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_check_disabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can check a disabled server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_check_unknown">
+<tt class="descname">test_check_unknown</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_check_unknown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can check a disabled server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_exists">
+<tt class="descname">test_exists</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can look for a server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_exists_bad_path">
+<tt class="descname">test_exists_bad_path</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_exists_bad_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can look for a bad server path.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_exists_bad_server">
+<tt class="descname">test_exists_bad_server</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_exists_bad_server" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can look for a bad server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_exists_unknown">
+<tt class="descname">test_exists_unknown</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_exists_unknown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can look for an empty server.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_get_next_number">
+<tt class="descname">test_get_next_number</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_get_next_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can get the next number for a document.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_get_next_number_bad_response">
+<tt class="descname">test_get_next_number_bad_response</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_get_next_number_bad_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the client can handle bad responses for the next number.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_client.TestModule.test_get_next_number_no_server">
+<tt class="descname">test_get_next_number_no_server</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_client.TestModule.test_get_next_number_no_server" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the next number for a document is None with no server.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.server.test.test_server">
+<span id="doorstop-server-test-test-server-module"></span><h2>doorstop.server.test.test_server module<a class="headerlink" href="#module-doorstop.server.test.test_server" title="Permalink to this headline">¶</a></h2>
+<p>Unit tests for the doorstop.web.server package.</p>
+<dl class="class">
+<dt id="doorstop.server.test.test_server.BaseTestCase">
+<em class="property">class </em><tt class="descclassname">doorstop.server.test.test_server.</tt><tt class="descname">BaseTestCase</tt><big>(</big><em>methodName='runTest'</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></tt></p>
+<p>Base test class for server tests.</p>
+<dl class="attribute">
+<dt id="doorstop.server.test.test_server.BaseTestCase.mock_document">
+<tt class="descname">mock_document</tt><em class="property"> = &lt;MagicMock id='47628966085328'&gt;</em><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase.mock_document" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.server.test.test_server.BaseTestCase.mock_document2">
+<tt class="descname">mock_document2</tt><em class="property"> = &lt;Mock id='47628959895312'&gt;</em><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase.mock_document2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.server.test.test_server.BaseTestCase.mock_item">
+<tt class="descname">mock_item</tt><em class="property"> = &lt;MagicMock id='47628965594128'&gt;</em><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase.mock_item" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.server.test.test_server.BaseTestCase.mock_item2">
+<tt class="descname">mock_item2</tt><em class="property"> = &lt;Mock id='47628966086032'&gt;</em><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase.mock_item2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.server.test.test_server.BaseTestCase.mock_tree">
+<tt class="descname">mock_tree</tt><em class="property"> = &lt;MagicMock id='47628959894096'&gt;</em><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase.mock_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.BaseTestCase.setUp">
+<tt class="descname">setUp</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.BaseTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.server.test.test_server.TestModule">
+<em class="property">class </em><tt class="descclassname">doorstop.server.test.test_server.</tt><tt class="descname">TestModule</tt><big>(</big><em>methodName='runTest'</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.server.test.test_server.BaseTestCase" title="doorstop.server.test.test_server.BaseTestCase"><tt class="xref py py-class docutils literal"><span class="pre">doorstop.server.test.test_server.BaseTestCase</span></tt></a></p>
+<p>Unit tests for the doorstop.web.server module.</p>
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestModule.test_main">
+<tt class="descname">test_main</tt><big>(</big><em>mock_run</em>, <em>mock_build</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestModule.test_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the server can started (mock).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestModule.test_main_debug">
+<tt class="descname">test_main_debug</tt><big>(</big><em>mock_run</em>, <em>mock_open</em>, <em>mock_build</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestModule.test_main_debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the server can started (mock, debug).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML">
+<em class="property">class </em><tt class="descclassname">doorstop.server.test.test_server.</tt><tt class="descname">TestRoutesHTML</tt><big>(</big><em>methodName='runTest'</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.server.test.test_server.BaseTestCase" title="doorstop.server.test.test_server.BaseTestCase"><tt class="xref py py-class docutils literal"><span class="pre">doorstop.server.test.test_server.BaseTestCase</span></tt></a></p>
+<p>Unit tests for the doorstop.web.server module HTML responses.</p>
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_attr">
+<tt class="descname">test_get_attr</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs/NAME</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_attr_list">
+<tt class="descname">test_get_attr_list</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_attr_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs/NAME:list</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_attr_str">
+<tt class="descname">test_get_attr_str</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_attr_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs/NAME:str</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_attrs">
+<tt class="descname">test_get_attrs</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_attrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_document">
+<tt class="descname">test_get_document</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_documents">
+<tt class="descname">test_get_documents</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/documents</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_index">
+<tt class="descname">test_get_index</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_item">
+<tt class="descname">test_get_item</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_get_items">
+<tt class="descname">test_get_items</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_get_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items</cite> works (HTML).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesHTML.test_post_numbers">
+<tt class="descname">test_post_numbers</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesHTML.test_post_numbers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/numbers</cite> works (HTML).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON">
+<em class="property">class </em><tt class="descclassname">doorstop.server.test.test_server.</tt><tt class="descname">TestRoutesJSON</tt><big>(</big><em>methodName='runTest'</em><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.server.test.test_server.BaseTestCase" title="doorstop.server.test.test_server.BaseTestCase"><tt class="xref py py-class docutils literal"><span class="pre">doorstop.server.test.test_server.BaseTestCase</span></tt></a></p>
+<p>Unit tests for the doorstop.web.server module JSON responses.</p>
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_attr">
+<tt class="descname">test_get_attr</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs/NAME</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_attr_list">
+<tt class="descname">test_get_attr_list</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_attr_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs/NAME:list</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_attr_str">
+<tt class="descname">test_get_attr_str</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_attr_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs/NAME:str</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_attrs">
+<tt class="descname">test_get_attrs</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_attrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID/attrs</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_document">
+<tt class="descname">test_get_document</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_documents">
+<tt class="descname">test_get_documents</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/documents</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_item">
+<tt class="descname">test_get_item</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items/UID</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_get_items">
+<tt class="descname">test_get_items</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_get_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/items</cite> works (JSON).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.server.test.test_server.TestRoutesJSON.test_post_numbers">
+<tt class="descname">test_post_numbers</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.test.test_server.TestRoutesJSON.test_post_numbers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify <cite>/document/PREFIX/numbers</cite> works (JSON).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.server.test">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-doorstop.server.test" title="Permalink to this headline">¶</a></h2>
+<p>Package for the doorstop.web tests.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">doorstop.server.test package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.test.test_all">doorstop.server.test.test_all module</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.test.test_client">doorstop.server.test.test_client module</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.test.test_server">doorstop.server.test.test_server module</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="doorstop.server.html"
+                        title="previous chapter">doorstop.server package</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/doorstop.server.test.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.server.html" title="doorstop.server package"
+             >previous</a> |</li>
+        <li><a href="index.html">Doorstop 0.8-dev documentation</a> &raquo;</li>
+          <li><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li><a href="doorstop.html" >doorstop package</a> &raquo;</li>
+          <li><a href="doorstop.server.html" >doorstop.server package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jace Browning.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>doorstop.server package &mdash; Doorstop 0.8-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.8-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Doorstop 0.8-dev documentation" href="index.html" />
+    <link rel="up" title="doorstop package" href="doorstop.html" />
+    <link rel="next" title="doorstop.server.test package" href="doorstop.server.test.html" />
+    <link rel="prev" title="doorstop.gui.test package" href="doorstop.gui.test.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.server.test.html" title="doorstop.server.test package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.gui.test.html" title="doorstop.gui.test package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Doorstop 0.8-dev documentation</a> &raquo;</li>
+          <li><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li><a href="doorstop.html" accesskey="U">doorstop package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="doorstop-server-package">
+<h1>doorstop.server package<a class="headerlink" href="#doorstop-server-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="doorstop.server.test.html">doorstop.server.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.server.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.server.test.html#module-doorstop.server.test.test_all">doorstop.server.test.test_all module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.server.test.html#module-doorstop.server.test.test_client">doorstop.server.test.test_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.server.test.html#module-doorstop.server.test.test_server">doorstop.server.test.test_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.server.test.html#module-doorstop.server.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-doorstop.server.client">
+<span id="doorstop-server-client-module"></span><h2>doorstop.server.client module<a class="headerlink" href="#module-doorstop.server.client" title="Permalink to this headline">¶</a></h2>
+<p>REST client to request item numbers.</p>
+<dl class="function">
+<dt id="doorstop.server.client.check">
+<tt class="descclassname">doorstop.server.client.</tt><tt class="descname">check</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.client.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure the server exists.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.client.exists">
+<tt class="descclassname">doorstop.server.client.</tt><tt class="descname">exists</tt><big>(</big><em>path='/documents'</em><big>)</big><a class="headerlink" href="#doorstop.server.client.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the server exists.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.client.get_next_number">
+<tt class="descclassname">doorstop.server.client.</tt><tt class="descname">get_next_number</tt><big>(</big><em>prefix</em><big>)</big><a class="headerlink" href="#doorstop.server.client.get_next_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the next number for the given document prefix.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.server.main">
+<span id="doorstop-server-main-module"></span><h2>doorstop.server.main module<a class="headerlink" href="#module-doorstop.server.main" title="Permalink to this headline">¶</a></h2>
+<p>REST server to display content and reserve item numbers.</p>
+<dl class="function">
+<dt id="doorstop.server.main.get_attr">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">get_attr</tt><big>(</big><em>prefix</em>, <em>uid</em>, <em>name</em><big>)</big><a class="headerlink" href="#doorstop.server.main.get_attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an item&#8217;s attribute value.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.get_attrs">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">get_attrs</tt><big>(</big><em>prefix</em>, <em>uid</em><big>)</big><a class="headerlink" href="#doorstop.server.main.get_attrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an item&#8217;s attributes.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.get_document">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">get_document</tt><big>(</big><em>prefix</em><big>)</big><a class="headerlink" href="#doorstop.server.main.get_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a tree&#8217;s document.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.get_documents">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">get_documents</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.main.get_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the tree&#8217;s documents.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.get_item">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">get_item</tt><big>(</big><em>prefix</em>, <em>uid</em><big>)</big><a class="headerlink" href="#doorstop.server.main.get_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a document&#8217;s item.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.get_items">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">get_items</tt><big>(</big><em>prefix</em><big>)</big><a class="headerlink" href="#doorstop.server.main.get_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a document&#8217;s items.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.index">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">index</tt><big>(</big><big>)</big><a class="headerlink" href="#doorstop.server.main.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the tree.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.main">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">main</tt><big>(</big><em>args=None</em><big>)</big><a class="headerlink" href="#doorstop.server.main.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process command-line arguments and run the program.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.post_numbers">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">post_numbers</tt><big>(</big><em>prefix</em><big>)</big><a class="headerlink" href="#doorstop.server.main.post_numbers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the next number in a document.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.main.run">
+<tt class="descclassname">doorstop.server.main.</tt><tt class="descname">run</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em><big>)</big><a class="headerlink" href="#doorstop.server.main.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the server.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments (from this module or the CLI)</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.server.utilities">
+<span id="doorstop-server-utilities-module"></span><h2>doorstop.server.utilities module<a class="headerlink" href="#module-doorstop.server.utilities" title="Permalink to this headline">¶</a></h2>
+<p>Shared functions for the <cite>doorstop.web</cite> package.</p>
+<dl class="function">
+<dt id="doorstop.server.utilities.build_url">
+<tt class="descclassname">doorstop.server.utilities.</tt><tt class="descname">build_url</tt><big>(</big><em>host=None</em>, <em>port=None</em>, <em>path=None</em><big>)</big><a class="headerlink" href="#doorstop.server.utilities.build_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the server&#8217;s URL with optional path.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.server.utilities.json_response">
+<tt class="descclassname">doorstop.server.utilities.</tt><tt class="descname">json_response</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#doorstop.server.utilities.json_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the request&#8217;s response should be JSON.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.server">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-doorstop.server" title="Permalink to this headline">¶</a></h2>
+<p>Web interface for Doorstop.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">doorstop.server package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.client">doorstop.server.client module</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.main">doorstop.server.main module</a></li>
+<li><a class="reference internal" href="#module-doorstop.server.utilities">doorstop.server.utilities module</a></li>
+<li><a class="reference internal" href="#module-doorstop.server">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="doorstop.gui.test.html"
+                        title="previous chapter">doorstop.gui.test package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="doorstop.server.test.html"
+                        title="next chapter">doorstop.server.test package</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/doorstop.server.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.server.test.html" title="doorstop.server.test package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.gui.test.html" title="doorstop.gui.test package"
+             >previous</a> |</li>
+        <li><a href="index.html">Doorstop 0.8-dev documentation</a> &raquo;</li>
+          <li><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li><a href="doorstop.html" >doorstop package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jace Browning.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

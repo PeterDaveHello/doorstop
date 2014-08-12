@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>doorstop.cli package &mdash; Doorstop 0.8-dev documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.8-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Doorstop 0.8-dev documentation" href="index.html" />
+    <link rel="up" title="doorstop package" href="doorstop.html" />
+    <link rel="next" title="doorstop.cli.test package" href="doorstop.cli.test.html" />
+    <link rel="prev" title="doorstop package" href="doorstop.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.cli.test.html" title="doorstop.cli.test package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.html" title="doorstop package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Doorstop 0.8-dev documentation</a> &raquo;</li>
+          <li><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li><a href="doorstop.html" accesskey="U">doorstop package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="doorstop-cli-package">
+<h1>doorstop.cli package<a class="headerlink" href="#doorstop-cli-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="doorstop.cli.test.html">doorstop.cli.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.cli.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.cli.test.html#module-doorstop.cli.test.test_all">doorstop.cli.test.test_all module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.cli.test.html#module-doorstop.cli.test.test_main">doorstop.cli.test.test_main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.cli.test.html#module-doorstop.cli.test.test_tutorial">doorstop.cli.test.test_tutorial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.cli.test.html#module-doorstop.cli.test.test_utilities">doorstop.cli.test.test_utilities module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.cli.test.html#module-doorstop.cli.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-doorstop.cli.commands">
+<span id="doorstop-cli-commands-module"></span><h2>doorstop.cli.commands module<a class="headerlink" href="#module-doorstop.cli.commands" title="Permalink to this headline">¶</a></h2>
+<p>Command functions.</p>
+<dl class="function">
+<dt id="doorstop.cli.commands.get">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">get</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a command function by name.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_add">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_add</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop add</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_clear">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_clear</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop clear</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_create">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_create</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop create</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_delete">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_delete</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop delete</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_edit">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_edit</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop edit</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_export">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_export</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_export" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop export</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_import">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_import</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em>, <em>_tree=None</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop import</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_link">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_link</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop link</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_publish">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_publish</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_publish" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop publish</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_remove">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_remove</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop remove</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_reorder">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_reorder</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em>, <em>_tree=None</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_reorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop reorder</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_review">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_review</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>error</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_review" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop review</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.commands.run_unlink">
+<tt class="descclassname">doorstop.cli.commands.</tt><tt class="descname">run_unlink</tt><big>(</big><em>args</em>, <em>cwd</em>, <em>_</em>, <em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.commands.run_unlink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process arguments and run the <cite>doorstop unlink</cite> subcommand.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+<li><strong>catch</strong> &#8211; catch and log <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.cli.main">
+<span id="doorstop-cli-main-module"></span><h2>doorstop.cli.main module<a class="headerlink" href="#module-doorstop.cli.main" title="Permalink to this headline">¶</a></h2>
+<p>Command-line interface for Doorstop.</p>
+<dl class="function">
+<dt id="doorstop.cli.main.main">
+<tt class="descclassname">doorstop.cli.main.</tt><tt class="descname">main</tt><big>(</big><em>args=None</em><big>)</big><a class="headerlink" href="#doorstop.cli.main.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process command-line arguments and run the program.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.cli.utilities">
+<span id="doorstop-cli-utilities-module"></span><h2>doorstop.cli.utilities module<a class="headerlink" href="#module-doorstop.cli.utilities" title="Permalink to this headline">¶</a></h2>
+<p>Shared functions for the <cite>doorstop.cli</cite> package.</p>
+<dl class="function">
+<dt id="doorstop.cli.utilities.ask">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">ask</tt><big>(</big><em>question</em>, <em>default=None</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.ask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display a console yes/no prompt.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>question</strong> &#8211; text of yes/no question ending in &#8216;?&#8217;</li>
+<li><strong>default</strong> &#8211; &#8216;yes&#8217;, &#8216;no&#8217;, or None (for no default)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">True = &#8216;yes&#8217;, False = &#8216;no&#8217;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.cli.utilities.capture">
+<em class="property">class </em><tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">capture</tt><big>(</big><em>catch=True</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.capture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">builtins.object</span></tt></p>
+<p>Context manager to catch <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><tt class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.utilities.configure_logging">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">configure_logging</tt><big>(</big><em>verbosity=0</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.configure_logging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure logging using the provided verbosity level (0+).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.utilities.configure_settings">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">configure_settings</tt><big>(</big><em>args</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.configure_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update settings based on the command-line options.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.utilities.get_ext">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">get_ext</tt><big>(</big><em>args</em>, <em>ext_stdout</em>, <em>ext_file</em>, <em>whole_tree</em>, <em>error</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.get_ext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine the output file extensions from input arguments.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>args</strong> &#8211; Namespace of CLI arguments</li>
+<li><strong>ext_stdout</strong> &#8211; default extension for standard output</li>
+<li><strong>ext_file</strong> &#8211; default extension for file output</li>
+<li><strong>whole_tree</strong> &#8211; indicates the path is a directory for the whole tree</li>
+<li><strong>error</strong> &#8211; function to call for CLI errors</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">chosen extension</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.utilities.literal_eval">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">literal_eval</tt><big>(</big><em>literal</em>, <em>error=None</em>, <em>default=None</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.literal_eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an literal to its value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>literal</strong> &#8211; string to evaulate</li>
+<li><strong>error</strong> &#8211; function to call for errors</li>
+<li><strong>default</strong> &#8211; default value for empty inputs</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Python literal</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">literal_eval</span><span class="p">(</span><span class="s">&quot;False&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">literal_eval</span><span class="p">(</span><span class="s">&quot;[1, 2, 3]&quot;</span><span class="p">)</span>
+<span class="go">[1, 2, 3]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.utilities.positive_int">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">positive_int</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.positive_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a value as positive.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; passed in value to Evaluate</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">value casted to an integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.cli.utilities.show">
+<tt class="descclassname">doorstop.cli.utilities.</tt><tt class="descname">show</tt><big>(</big><em>message</em>, <em>flush=False</em><big>)</big><a class="headerlink" href="#doorstop.cli.utilities.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print (optionally flushed) text to the display.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.cli">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-doorstop.cli" title="Permalink to this headline">¶</a></h2>
+<p>Command-line interface for Doorstop.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">doorstop.cli package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-doorstop.cli.commands">doorstop.cli.commands module</a></li>
+<li><a class="reference internal" href="#module-doorstop.cli.main">doorstop.cli.main module</a></li>
+<li><a class="reference internal" href="#module-doorstop.cli.utilities">doorstop.cli.utilities module</a></li>
+<li><a class="reference internal" href="#module-doorstop.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="doorstop.html"
+                        title="previous chapter">doorstop package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="doorstop.cli.test.html"
+                        title="next chapter">doorstop.cli.test package</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/doorstop.cli.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.cli.test.html" title="doorstop.cli.test package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.html" title="doorstop package"
+             >previous</a> |</li>
+        <li><a href="index.html">Doorstop 0.8-dev documentation</a> &raquo;</li>
+          <li><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li><a href="doorstop.html" >doorstop package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jace Browning.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
